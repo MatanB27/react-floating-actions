@@ -1,0 +1,61 @@
+.fa-container {
+  position: fixed;
+  z-index: 999999;
+}
+
+.bottom-right {
+  bottom: 24px;
+  right: 24px;
+}
+
+.bottom-left {
+  bottom: 24px;
+  left: 24px;
+}
+
+.fa-main {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.fa-item {
+  position: absolute;
+  right: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #222;
+  color: white;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.fa-item.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.fa-item.pop {
+  transform: scale(0);
+}
+
+.fa-item.pop.open {
+  transform: scale(1);
+}
+
+.fa-item.slide {
+  transform: translateY(0);
+}
+
+.fa-item.stagger.open {
+  opacity: 1;
+}
