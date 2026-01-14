@@ -4,7 +4,20 @@ export type BuiltInActionType =
   | "whatsapp"
   | "phone"
   | "email"
-  | "instagram";
+  | "instagram"
+  | "facebook"
+  | "x"
+  | "linkedin"
+  | "github"
+  | "youtube"
+  | "discord"
+  | "google"
+  | "pinterest"
+  | "reddit"
+  | "snapchat"
+  | "telegram"
+  | "tiktok"
+  | "twitch";
 
 export type BuiltInAction = {
   type: BuiltInActionType;
@@ -20,17 +33,16 @@ export type CustomAction = {
 
 export type Action = BuiltInAction | CustomAction;
 
+export type AnimationType = "pop" | "slide" | "stagger" | "radial" | "fade" | "flip" ;
 
-export type AnimationType = "pop" | "slide" | "stagger" | "radial";
-
-export type Option = {
+export type Options = {
   animation?: AnimationType;
   spacing?: number;
-  position?: "bottom-right" | "bottom-left" ;
-}
+  position?: "bottom-right" | "bottom-left";
+};
 
 export type FloatingActionsProps = {
   actions: Action[];
   animation?: AnimationType;
-  options?: Option;
+  options?: Options;
 };
