@@ -1,0 +1,63 @@
+.fa-item {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(0, 0) scale(0);
+  transition: opacity 0.4s ease,
+    transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.fa-item.open {
+  opacity: 1;
+  pointer-events: auto;
+  transform: var(--target) scale(1);
+}
+
+.fa-item.fade {
+  transform: var(--target);
+  scale: 1;
+}
+.fa-item.fade.open {
+  opacity: 1;
+}
+
+.fa-item.stagger {
+  transform: var(--target) translateY(15px) rotate(-15deg) scale(0.5);
+}
+.fa-item.stagger.open {
+  transform: var(--target) translateY(0) rotate(0deg) scale(1);
+}
+
+.fa-item.flip {
+  transform: translate(0, 0) rotateY(180deg) scale(0);
+}
+.fa-item.flip.open {
+  transform: var(--target) rotateY(0) scale(1);
+}
+
+.fa-item.pop {
+  transform: var(--target) scale(0);
+}
+.fa-item.pop.open {
+  transform: var(--target) scale(1);
+}
+
+.fa-item.slide {
+  transform: translateY(20px) scale(0);
+}
+.fa-item.slide.open {
+  transform: var(--target) scale(1);
+}
+
+.fa-item.radial {
+  transform: translate(0, 0) scale(0);
+}
+.fa-item.radial.open {
+  transform: var(--target) scale(1);
+}

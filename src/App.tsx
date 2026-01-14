@@ -35,7 +35,7 @@ function App() {
           { type: "tiktok", value: "my_account" },
           { type: "twitch", value: "my_stream" },
         ]}
-        options={{ animation: "slide", spacing: 50 }}
+        options={{ animation: "radial", spacing: 70, position: "bottom-right" }}
       />
     </>
   );
