@@ -1,4 +1,9 @@
-export const getPosition = (index: number, animation: string, spacing: number, multiplierX: number) => {
+export const getPosition = (
+  index: number,
+  animation: string,
+  spacing: number,
+  multiplierX: number
+) => {
   let orbit = 0;
   let itemsInThisOrbit = 4;
   let tempIndex = index;
@@ -20,5 +25,6 @@ export const getPosition = (index: number, animation: string, spacing: number, m
   if (animation === "radial") {
     return `translate(${radialX}px, ${radialY}px)`;
   }
+
   return `translateY(${verticalY}px)`;
 };

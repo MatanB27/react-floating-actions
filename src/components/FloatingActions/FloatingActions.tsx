@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FloatingActionsProps } from "../Types";
-import { ACTION_MAP } from "../ActionMap";
 import "./FloatingActions.css";
 import { MainButtonIcon } from "./MainButtonIcon/MainButtonIcon";
 import { ActionItem } from "../ActionItem/ActionItem";
@@ -12,6 +11,7 @@ export function FloatingActions({ actions, options }: FloatingActionsProps) {
     animation = "slide",
     spacing = 60,
     position = "bottom-right",
+    theme = "light",
   } = { ...options };
 
   const isRight = position.includes("right");
@@ -30,7 +30,7 @@ export function FloatingActions({ actions, options }: FloatingActionsProps) {
         />
       ))}
       <button
-        className={`fa-main ${open ? "active" : ""}`}
+        className={`fa-main ${theme} ${open ? "active" : ""}`}
         onClick={() => setOpen(!open)}
       >
         <MainButtonIcon isOpen={open} />

@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+export type theme = "light" | "dark";
+export type position = "bottom-right" | "bottom-left";
 
 export type BuiltInActionType =
   | "whatsapp"
@@ -19,26 +20,18 @@ export type BuiltInActionType =
   | "tiktok"
   | "twitch";
 
-export type BuiltInAction = {
+export type Action = {
   type: BuiltInActionType;
   value: string;
 };
-
-export type CustomAction = {
-  type: "custom";
-  label: string;
-  icon: ReactNode;
-  href: string;
-};
-
-export type Action = BuiltInAction | CustomAction;
 
 export type AnimationType = "pop" | "slide" | "stagger" | "radial" | "fade" | "flip" ;
 
 export type Options = {
   animation?: AnimationType;
   spacing?: number;
-  position?: "bottom-right" | "bottom-left";
+  position?: position;
+  theme?: theme;
 };
 
 export type FloatingActionsProps = {

@@ -7,7 +7,6 @@ function App() {
 
   return (
     <>
-      <div></div>
       <h1>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
@@ -20,12 +19,12 @@ function App() {
       <FloatingActions
         actions={[
           { type: "whatsapp", value: "+972501234567" },
-          { type: "instagram", value: "my_profile" },
-          { type: "facebook", value: "my_page" },
-          { type: "x", value: "my_handle" },
-          { type: "linkedin", value: "my-profile-url" },
-          { type: "github", value: "my_repo" },
-          { type: "youtube", value: "my_channel" },
+          { type: "instagram", value: "https://www.instagram.com" },
+          { type: "facebook", value: "https://www.facebook.com" },
+          { type: "x", value: "https://twitter.com" },
+          { type: "linkedin", value: "https://www.linkedin.com" },
+          { type: "github", value: "https://github.com" },
+          { type: "youtube", value: "https://www.youtube.com" },
           { type: "discord", value: "invite_code" },
           { type: "google", value: "https://maps.app.goo.gl/..." },
           { type: "pinterest", value: "my_boards" },
@@ -33,9 +32,13 @@ function App() {
           { type: "snapchat", value: "my_snap" },
           { type: "telegram", value: "my_username" },
           { type: "tiktok", value: "my_account" },
-          { type: "twitch", value: "my_stream" },
         ]}
-        options={{ animation: "radial", spacing: 70, position: "bottom-right" }}
+        options={{
+          animation: "radial",
+          spacing: 75,
+          position: "bottom-right",
+          theme: "light",
+        }}
       />
     </>
   );
