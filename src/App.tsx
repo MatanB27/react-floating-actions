@@ -26,18 +26,23 @@ function App() {
           { type: "github", value: "https://github.com" },
           { type: "youtube", value: "https://www.youtube.com" },
           { type: "discord", value: "invite_code" },
-          { type: "google", value: "https://maps.app.goo.gl/..." },
           { type: "pinterest", value: "my_boards" },
           { type: "reddit", value: "my_username" },
           { type: "snapchat", value: "my_snap" },
           { type: "telegram", value: "my_username" },
           { type: "tiktok", value: "my_account" },
+          { type: "twitch", value: "my_snap" },
+          { type: "telegram", value: "my_username" },
+          { type: "tiktok", value: "my_account" },
+          { type: "googleMaps", value: "place_id_or_coordinates" },
+          { type: "gmail", value: "my_email@gmail.com" },
+          { type: "phone", value: "+972501234567" },
         ]}
         options={{
           animation: "radial",
           spacing: 75,
           position: "bottom-right",
-          theme: "light",
+          theme: "dark",
         }}
       />
     </>

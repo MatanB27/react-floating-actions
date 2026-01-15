@@ -66,3 +66,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+button:focus {
+  outline: 0;
+  outline-style: none;
+  outline-width: 0;
+}

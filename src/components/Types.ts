@@ -4,7 +4,8 @@ export type position = "bottom-right" | "bottom-left";
 export type BuiltInActionType =
   | "whatsapp"
   | "phone"
-  | "email"
+  | "gmail"
+  | "googleMaps"
   | "instagram"
   | "facebook"
   | "x"

@@ -38,14 +38,8 @@ export const ActionItem = ({
       <img
         src={config?.icon}
         alt={config?.label ?? ""}
-        width={22}
-        height={22}
-        style={{
-          filter:
-            config?.iconVariant === "dark"
-              ? "brightness(0)"
-              : "brightness(0) invert(1)",
-        }}
+        width={config?.size}
+        height={config?.size}
       />
     </a>
   );
