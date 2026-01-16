@@ -40,7 +40,10 @@ export const ACTION_MAP: Record<string, ActionConfig> = {
     color: "#fff",
     iconVariant: "light",
     size: 28,
-    buildHref: (v) => `https://maps.app.goo.gl/${v}`,
+    buildHref: (v) =>
+      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+        v
+      )}`,
   },
   phone: {
     label: "Phone",
@@ -48,7 +51,7 @@ export const ACTION_MAP: Record<string, ActionConfig> = {
     color: "#000000",
     iconVariant: "light",
     size: 24,
-    buildHref: (v) => `https://wa.me/${v.replace(/\D/g, "")}`,
+    buildHref: (v) => `tel:${v.replace(/\D/g, "")}`,
   },
   gmail: {
     label: "Gmail",
@@ -56,7 +59,8 @@ export const ACTION_MAP: Record<string, ActionConfig> = {
     color: "#fff",
     iconVariant: "light",
     size: 28,
-    buildHref: (v) => `https://wa.me/${v.replace(/\D/g, "")}`,
+    buildHref: (v) =>
+      `https://mail.google.com/mail/?view=cm&fs=1&to=${v.trim()}`,
   },
   instagram: {
     label: "Instagram",
@@ -134,6 +138,7 @@ export const ACTION_MAP: Record<string, ActionConfig> = {
     color: "#0088CC",
     iconVariant: "light",
     size: 28,
+    buildHref: (v) => `https://t.me/${v.replace("@", "")}`,
   },
   tiktok: {
     label: "TikTok",

@@ -1,21 +1,61 @@
 import { useState } from "react";
-import { FloatingActionsProps } from "../Types";
-import "./FloatingActions.css";
 import { MainButtonIcon } from "./MainButtonIcon/MainButtonIcon";
 import { ActionItem } from "../ActionItem/ActionItem";
 import { getPosition } from "../../utils";
+import { Action, Options } from "../Types";
+import { Positions } from "../../constants";
+import "./FloatingActions.css";
 
+export interface FloatingActionsProps {
+  actions: Action[];
+  options?: Options;
+}
+
+export interface FloatingActionsProps {
+  /**
+   * Actions displayed when the floating button is expanded.
+   */
+  actions: Action[];
+
+  /**
+   * Optional configuration for animation, spacing, position, and theme.
+   */
+  options?: Options;
+}
+
+/**
+ * FloatingActions
+ *
+ * A floating action button (FAB) that expands to reveal a list of
+ * platform-specific actions.
+ *
+ * @example
+ * ```tsx
+ * <FloatingActions
+ *   actions={[
+ *     { type: "whatsapp", value: "0501234567" },
+ *     { type: "gmail", value: "support@example.com" },
+ *     { type: "instagram", value: "https://instagram.com/username" },
+ *   ]}
+ *   options={{
+ *     position: "bottom-right",
+ *     theme: "dark",
+ *     animation: "radial",
+ *     spacing: 75,
+ *   }}
+ * />
+ * ```
+ */
 export function FloatingActions({ actions, options }: FloatingActionsProps) {
   const [open, setOpen] = useState(false);
   const {
-    animation = "slide",
+    animation = "pop",
     spacing = 60,
     position = "bottom-right",
     theme = "light",
   } = { ...options };
 
-  const isRight = position.includes("right");
-  const multiplierX = isRight ? -1 : 1;
+  const multiplierX = Positions.BOTTOM_RIGHT ? -1 : 1;
 
   return (
     <div className={`fa-container ${position}`}>
