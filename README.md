@@ -27,7 +27,6 @@ pnpm add react-floating-actions
 
 ```tsx
 import { FloatingActions } from 'react-floating-actions';
-import 'react-floating-actions/css';
 
 export function App() {
   return (
@@ -52,7 +51,6 @@ export function App() {
 ```tsx
 import { FloatingActions } from 'react-floating-actions';
 import type { Action, Options } from 'react-floating-actions';
-import 'react-floating-actions/css';
 
 export function App() {
   const actions: Action[] = [
@@ -156,23 +154,6 @@ type Position = 'bottom-right' | 'bottom-left'
 
 ```typescript
 type Theme = 'light' | 'dark'
-```
-
-## CSS Customization
-
-Import the styles in your application:
-
-```tsx
-import 'react-floating-actions/css';
-```
-
-You can override CSS variables to customize colors:
-
-```css
-:root {
-  --fab-background: #007bff;
-  --fab-text: white;
-}
 ```
 
 ## Browser Support
