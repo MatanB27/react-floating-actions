@@ -8,7 +8,9 @@ export default defineConfig({
     lib: {
       entry: "src/index.ts",
       name: "FloatingActions",
-      fileName: (format) => `floating-actions.${format}.js`,
+      fileName: (format) => {
+        return `floating-actions.${format === "es" ? "es" : "umd"}.js`;
+      },
     },
     rollupOptions: {
       external: ["react", "react-dom"],
