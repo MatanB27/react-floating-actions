@@ -26,7 +26,7 @@ export const ActionItem = ({
     <a
       href={config?.buildHref?.(action.value) ?? action.value}
       target="_blank"
-      className={`fa-item ${animation} ${open ? "open" : ""}`}
+      className={`floating-action-item ${animation} ${open ? "open" : ""}`}
       style={
         {
           transitionDelay: open ? `${index * 40}ms` : "0ms",

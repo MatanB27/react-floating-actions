@@ -1,4 +1,4 @@
-.fa-container {
+.floating-action-container {
   position: fixed;
   z-index: 9999;
   display: flex;
@@ -6,17 +6,17 @@
   justify-content: center;
 }
 
-.bottom-right {
+.floating-action-container.bottom-right {
   bottom: 24px;
   right: 24px;
 }
 
-.bottom-left {
+.floating-action-container.bottom-left {
   bottom: 24px;
   left: 24px;
 }
 
-.fa-main {
+.floating-action-container .fa-main {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -25,4 +25,51 @@
   color: white;
   cursor: pointer;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.floating-action-container .main-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.floating-action-container .main-button.light {
+  background: #ffffff;
+  color: #333333;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.floating-action-container .main-button.active {
+  background: #ff4757;
+  color: white;
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 8px 20px rgba(255, 71, 87, 0.3);
+}
+
+.floating-action-container .main-button:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.4),
+    0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.floating-action-container .main-button.light:hover {
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.2),
+    0 10px 25px rgba(0, 0, 0, 0.15);
 }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MainButtonIcon } from "./MainButtonIcon/MainButtonIcon";
+import { MainButtonIcon } from "../MainButtonIcon/MainButtonIcon";
 import { ActionItem } from "../ActionItem/ActionItem";
 import { getPosition } from "../../utils";
 import { Action, Options } from "../Types";
@@ -55,10 +55,10 @@ export function FloatingActions({ actions, options }: FloatingActionsProps) {
     theme = "light",
   } = { ...options };
 
-  const multiplierX = Positions.BOTTOM_RIGHT ? -1 : 1;
+  const multiplierX = position === Positions.BOTTOM_LEFT ? 1 : -1;
 
   return (
-    <div className={`fa-container ${position}`}>
+    <div className={`floating-action-container ${position}`}>
       {actions.map((action, index) => (
         <ActionItem
           key={index}
@@ -70,7 +70,7 @@ export function FloatingActions({ actions, options }: FloatingActionsProps) {
         />
       ))}
       <button
-        className={`fa-main ${theme} ${open ? "active" : ""}`}
+        className={`main-button ${theme} ${open ? "active" : ""}`}
         onClick={() => setOpen(!open)}
       >
         <MainButtonIcon isOpen={open} />

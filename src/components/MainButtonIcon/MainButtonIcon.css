@@ -1,0 +1,18 @@
+.floating-action-main-icon-wrapper {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-action-svg-main-icon {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  stroke: currentColor;
+}
+
+.floating-action-svg-main-icon.active {
+  transform: rotate(135deg);
+}

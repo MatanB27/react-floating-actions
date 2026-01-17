@@ -1,4 +1,4 @@
-.fa-item {
+.floating-action-item {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -9,54 +9,55 @@
   cursor: pointer;
   opacity: 0;
   transform: translate(0, 0) scale(0);
-  transition: opacity 0.4s ease,
+  transition:
+    opacity 0.4s ease,
     transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.fa-item.open {
+.floating-action-item.open {
   opacity: 1;
   transform: var(--target) scale(1);
 }
 
-.fa-item.fade {
+.floating-action-item.fade {
   transform: var(--target);
   scale: 1;
 }
-.fa-item.fade.open {
+.floating-action-item.fade.open {
   opacity: 1;
 }
 
-.fa-item.stagger {
+.floating-action-item.stagger {
   transform: var(--target) translateY(15px) rotate(-15deg) scale(0.5);
 }
-.fa-item.stagger.open {
+.floating-action-item.stagger.open {
   transform: var(--target) translateY(0) rotate(0deg) scale(1);
 }
 
-.fa-item.flip {
+.floating-action-item.flip {
   transform: translate(0, 0) rotateY(180deg) scale(0);
 }
-.fa-item.flip.open {
+.floating-action-item.flip.open {
   transform: var(--target) rotateY(0) scale(1);
 }
 
-.fa-item.pop {
+.floating-action-item.pop {
   transform: var(--target) scale(0);
 }
-.fa-item.pop.open {
+.floating-action-item.pop.open {
   transform: var(--target) scale(1);
 }
 
-.fa-item.slide {
+.floating-action-item.slide {
   transform: translateY(20px) scale(0);
 }
-.fa-item.slide.open {
+.floating-action-item.slide.open {
   transform: var(--target) scale(1);
 }
 
-.fa-item.radial {
+.floating-action-item.radial {
   transform: translate(0, 0) scale(0);
 }
-.fa-item.radial.open {
+.floating-action-item.radial.open {
   transform: var(--target) scale(1);
 }
