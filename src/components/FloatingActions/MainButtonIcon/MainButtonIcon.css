@@ -9,31 +9,40 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2), 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.2),
+    0 8px 20px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
 }
 
 .fa-main.light {
   background: #ffffff;
   color: #333333;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.1),
+    0 8px 20px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
 .fa-main.active {
   background: #ff4757;
   color: white;
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2),
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.2),
     0 8px 20px rgba(255, 71, 87, 0.3);
 }
 
 .fa-main:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4), 0 10px 25px rgba(0, 0, 0, 0.4);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.4),
+    0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
 .fa-main.light:hover {
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.2),
+    0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .fa-main-icon-wrapper {
@@ -45,8 +54,8 @@
 }
 
 .fa-svg-icon {
-  width: 100%;
-  height: 100%;
+  width: 18px;
+  height: 18px;
   transition: transform 0.5s cubic-bezier(0.68, -0.6, 0.32, 1.6);
   stroke: currentColor;
 }

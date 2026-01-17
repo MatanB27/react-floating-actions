@@ -50,7 +50,7 @@ function App() {
         ]}
         options={{
           animation: "radial",
-          spacing: 65,
+          spacing: 75,
           position: "bottom-right",
           theme: "dark",
         }}
