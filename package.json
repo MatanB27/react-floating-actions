@@ -1,6 +1,6 @@
 {
   "name": "react-floating-actions",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A beautiful, customizable floating action button component for React with support for multiple platforms and animations",
   "type": "module",
   "main": "./dist/floating-actions.umd.js",

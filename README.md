@@ -4,12 +4,12 @@ A beautiful, customizable floating action button (FAB) component for React with 
 
 ## Features
 
-- 🎨 **Customizable Theme** - Light and dark themes with color customization
-- 🎭 **Multiple Animations** - Pop, slide, stagger, radial, fade, and flip animations
-- 📱 **Platform Support** - Built-in support for 17+ platforms including WhatsApp, Telegram, Gmail, Discord, and more
-- 🎯 **Positioned Anywhere** - Anchor the button to any corner of the screen
-- ⚡ **TypeScript Support** - Fully typed with TypeScript for better developer experience
-- 📦 **Lightweight** - Minimal dependencies, tree-shakeable
+- **Customizable Theme** - Light and dark themes with color customization
+- **Multiple Animations** - Pop, slide, stagger, radial, fade, and flip animations
+- **Platform Support** - Built-in support for 17+ platforms including WhatsApp, Telegram, Gmail, Discord, and more
+- **Positioned Anywhere** - Anchor the button to any corner of the screen
+- **TypeScript Support** - Fully typed with TypeScript for better developer experience
+- **Lightweight** - Minimal dependencies, tree-shakeable
 
 ## Installation
 
@@ -155,6 +155,14 @@ type Position = 'bottom-right' | 'bottom-left'
 ```typescript
 type Theme = 'light' | 'dark'
 ```
+
+### Animations Examples
+
+#### Radial Animation
+![Radial Animation](assets/images/radial.png)
+
+#### Vertical Animation
+![Vertical Animation](assets/images/vertical.png)
 
 ## Browser Support
 
