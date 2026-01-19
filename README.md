@@ -159,10 +159,10 @@ type Theme = 'light' | 'dark'
 ### Examples
 
 #### Radial View
-![Radial View](src/assets/images/radial.png)
+![Radial View](public/assets/radial.png)
 
 #### Vertical View
-![Vertical View](src/assets/images/vertical.png)
+![Vertical View](public/assets/vertical.png)
 
 ## Browser Support
 
