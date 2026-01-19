@@ -156,13 +156,13 @@ type Position = 'bottom-right' | 'bottom-left'
 type Theme = 'light' | 'dark'
 ```
 
-### Animations Examples
+### Examples
 
-#### Radial Animation
-![Radial Animation](assets/images/radial.png)
+#### Radial View
+![Radial View](src/assets/images/radial.png)
 
-#### Vertical Animation
-![Vertical Animation](assets/images/vertical.png)
+#### Vertical View
+![Vertical View](src/assets/images/vertical.png)
 
 ## Browser Support
 
